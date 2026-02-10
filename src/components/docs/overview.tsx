@@ -87,7 +87,7 @@ function initOrama() {
 export function DocsOverview() {
   const [isSearchExpanded, setIsSearchExpanded] = useState(false);
   const { search, setSearch, query } = useDocsSearch({
-    type: 'static', // Uses client-side search for static export compatibility
+    type: 'static',
     initOrama,
   });
 
