@@ -42,7 +42,7 @@ const FeaturesTabsSection = () => {
       id: 'privacy',
       title: 'Cloud Convenience, Local Privacy',
       description:
-        'Your OpenClaw runs in a secure, isolated environment powered by Phala TEE. We can\'t see your data, even if we wanted to.',
+        'Your OpenClaw runs in a secure, isolated environment with confidential compute. We can\'t see your data, even if we wanted to.',
       image: {
         src: '/images/home/features-tabs/3.webp',
         width: 550,

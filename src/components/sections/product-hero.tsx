@@ -165,13 +165,13 @@ export default function ProductHero() {
       {/* CTA Buttons */}
       <div className="mx-auto mt-10 max-w-md space-y-3 md:mt-20">
         <div className="flex gap-4.5">
-          <Button className="flex-1 md:min-w-45">Get Started — $20/mo</Button>
+          <Button variant="cta" className="flex-1 md:min-w-45">Get Started — $20/mo</Button>
           <Button className="flex-1 md:min-w-45" variant="outline">
             Book Setup Call
           </Button>
         </div>
-        <div className="text-center text-sm">
-          22+ channels · AI included · TEE privacy
+        <div className="text-muted-foreground text-center text-sm tracking-wide">
+          22+ channels · AI included · Secure by default
         </div>
       </div>
     </section>

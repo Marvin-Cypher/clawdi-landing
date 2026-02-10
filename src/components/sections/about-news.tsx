@@ -1,48 +1,23 @@
-import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Quote } from 'lucide-react';
 
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
-
-const newsItems = [
+const highlights = [
   {
     id: 1,
-    logo: {
-      src: '/images/logos/forbes.svg',
-      alt: 'Forbes',
-      width: 162,
-      height: 42,
-      className: 'invert dark:invert-0',
-    },
+    label: 'The Vision',
     title:
-      'OpenClaw is quickly becoming the go-to open-source AI assistant framework. Clawdi removes the only barrier left: setup complexity. 15 minutes to a fully working AI assistant.',
-    readMoreLink: '#',
+      'OpenClaw is the most powerful open-source AI assistant framework with 180K+ GitHub stars. Clawdi removes the only barrier left: setup complexity. 15 minutes to a fully working AI assistant.',
   },
   {
     id: 2,
-    logo: {
-      src: '/images/logos/tc.svg',
-      alt: 'TechCrunch',
-      width: 84,
-      height: 42,
-    },
+    label: 'The Difference',
     title:
-      'With TEE-based privacy and a managed OpenClaw instance for $20/mo, Clawdi is making personal AI assistants accessible to non-technical users for the first time.',
-    readMoreLink: '#',
+      'With hardware-level privacy and a managed OpenClaw instance for $20/mo, Clawdi makes personal AI assistants accessible to everyone — not just developers with spare servers.',
   },
   {
     id: 3,
-    logo: {
-      src: '/images/logos/the-guardian.svg',
-      alt: 'The Guardian',
-      width: 127.8,
-      height: 48,
-      className: 'invert dark:invert-0',
-    },
+    label: 'The Experience',
     title:
-      "The AI assistant you message on WhatsApp that actually reads your email, manages your calendar, and respects your privacy. Clawdi turns the promise of AI into daily reality.",
-    readMoreLink: '#',
+      'An AI assistant you message on WhatsApp that actually reads your email, manages your calendar, and respects your privacy. Clawdi turns the promise of AI into daily reality.',
   },
 ];
 
@@ -51,34 +26,22 @@ export default function AboutNews() {
     <section className="section-padding bg-muted/40">
       <div className="container">
         <h2 className="text-4xxl leading-tight tracking-tight md:text-5xl">
-          What people are saying
+          Why Clawdi exists
         </h2>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {newsItems.map((item) => (
+        <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+          {highlights.map((item) => (
             <div key={item.id} className="space-y-3">
-              <Image
-                src={item.logo.src}
-                alt={item.logo.alt}
-                width={item.logo.width}
-                height={item.logo.height}
-                className={cn`object-contain ${item.logo.className}`}
-              />
+              <div className="flex items-center gap-2">
+                <Quote className="text-accent-coral size-5" />
+                <span className="text-accent-coral text-sm font-semibold uppercase tracking-wider">
+                  {item.label}
+                </span>
+              </div>
 
               <p className="text-accent-foreground text-lg leading-snug">
                 {item.title}
               </p>
-
-              <Button
-                variant="ghost"
-                asChild
-                className="group gap-3 !px-0 font-normal transition-opacity hover:!bg-transparent hover:opacity-95"
-              >
-                <Link href={item.readMoreLink}>
-                  Read more
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </Button>
             </div>
           ))}
         </div>

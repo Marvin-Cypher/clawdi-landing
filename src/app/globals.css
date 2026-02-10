@@ -35,6 +35,20 @@
   --chart-4: oklch(0.55 0.15 260);
   --chart-5: oklch(0.6 0.15 45);
 
+  /* CTA accent tokens (design system: scarlet/coral) */
+  --cta: oklch(0.58 0.22 25);
+  --cta-foreground: oklch(1 0 0);
+  --cta-hover: oklch(0.52 0.22 25);
+  --accent-coral: oklch(0.66 0.2 20);
+
+  /* Shadow scale (design tokens) */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.15);
+  --shadow-cta: 0 4px 12px oklch(0.58 0.22 25 / 0.25);
+  --shadow-cta-hover: 0 6px 16px oklch(0.58 0.22 25 / 0.35);
+
   --sidebar: oklch(0.97 0.005 240);
   --sidebar-foreground: oklch(0.15 0.01 240);
   --sidebar-primary: oklch(0.63 0.19 260);
@@ -84,6 +98,20 @@
   --chart-4: oklch(0.55 0.15 260);
   --chart-5: oklch(0.6 0.15 45);
 
+  /* CTA tokens (same in dark, higher contrast) */
+  --cta: oklch(0.62 0.22 25);
+  --cta-foreground: oklch(1 0 0);
+  --cta-hover: oklch(0.56 0.22 25);
+  --accent-coral: oklch(0.66 0.2 20);
+
+  /* Shadow scale (dark mode — slightly stronger for visibility) */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.3);
+  --shadow-cta: 0 4px 14px oklch(0.62 0.22 25 / 0.3);
+  --shadow-cta-hover: 0 8px 20px oklch(0.62 0.22 25 / 0.4);
+
   --sidebar: oklch(0.15 0.01 240);
   --sidebar-foreground: oklch(0.97 0 0);
   --sidebar-primary: oklch(0.63 0.19 260);
@@ -121,6 +149,11 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
+
+  --color-cta: var(--cta);
+  --color-cta-foreground: var(--cta-foreground);
+  --color-cta-hover: var(--cta-hover);
+  --color-accent-coral: var(--accent-coral);
 
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
@@ -186,6 +219,14 @@
   }
   .text-gradient {
     @apply bg-gradient-to-r from-[var(--chart-1)] via-[var(--chart-2)] to-[var(--chart-3)] bg-clip-text text-transparent;
+  }
+  /* Design token: card hover lift */
+  .card-hover {
+    transition: transform 250ms ease, box-shadow 250ms ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
   }
 }
 

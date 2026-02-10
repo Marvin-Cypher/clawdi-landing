@@ -352,8 +352,8 @@ const Features2 = () => {
 
         <div className="flex justify-center">
           <Button
-            variant="secondary"
-            className="border-input bg-accent max-w-64 flex-1 border"
+            variant="cta"
+            className="max-w-72 flex-1"
           >
             Get Your OpenClaw
           </Button>
@@ -378,9 +378,9 @@ const featureCards = [
   },
   {
     icon: Brain,
-    title: 'TEE Privacy',
+    title: 'Hardware-Level Privacy',
     description:
-      'Your data runs in a secure enclave. We literally cannot access your conversations.',
+      'Your data runs in confidential compute. Not even we can see your conversations.',
   },
   {
     icon: GitBranch,

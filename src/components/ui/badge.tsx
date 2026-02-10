@@ -18,6 +18,8 @@ const badgeVariants = cva(
         outline:
           'text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground',
         muted: 'bg-muted',
+        accent:
+          'bg-transparent text-accent-coral border-accent-coral border-[1.5px] rounded-full uppercase tracking-widest text-[0.6875rem] font-semibold px-4 py-1',
         info: 'rounded-sm border-none border-amber-500/20 bg-amber-500/10 text-amber-400',
       },
     },

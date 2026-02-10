@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 
 interface SVGProps extends React.SVGProps<SVGSVGElement> {
@@ -12,20 +13,17 @@ export default function Hero() {
     <section className="section-padding relative">
       <div className="relative container">
         <div className="flex flex-col justify-between gap-10 lg:flex-row lg:items-center">
-          <div className="flex max-w-3xl flex-1 flex-col items-start gap-5">
-            <div className="flex items-center rounded-full border p-1 text-xs">
-              <span className="bg-muted rounded-full px-3 py-1">
-                Powered by OpenClaw
-              </span>
-              <span className="px-3">179K+ GitHub Stars</span>
-            </div>
+          <div className="flex max-w-3xl flex-1 flex-col items-start gap-6">
+            <Badge variant="accent">
+              Powered by OpenClaw · 180K+ Stars
+            </Badge>
 
             <h1 className="text-5xl leading-none tracking-tight text-balance md:text-6xl lg:text-7xl">
               OpenClaw, without{' '}
               <span className="text-gradient">the setup nightmare</span>
             </h1>
 
-            <p className="text-muted-foreground leading-snug md:text-lg lg:text-xl">
+            <p className="text-muted-foreground max-w-2xl leading-snug md:text-lg lg:text-xl">
               OpenClaw is the world&apos;s most powerful open-source AI
               assistant. But 99% of people get stuck in setup hell.
               Clawdi is OpenClaw as a Service — we handle the impossible
@@ -34,14 +32,14 @@ export default function Hero() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="space-y-3">
+          <div className="space-y-4">
             <div className="flex gap-4.5">
-              <Button className="flex-1 md:min-w-45">Get Started — $20/mo</Button>
-              <Button className="flex-1 md:min-w-45" variant="outline">
+              <Button variant="cta" className="flex-1 md:min-w-45">Get Started — $20/mo</Button>
+              <Button variant="outline" className="flex-1 md:min-w-45">
                 See How It Works
               </Button>
             </div>
-            <div className="text-center text-sm">
+            <div className="text-muted-foreground text-center text-sm tracking-wide">
               15-min setup · Zero config · AI included
             </div>
           </div>

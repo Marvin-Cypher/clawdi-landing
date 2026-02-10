@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     'OpenClaw Hosting',
     'AI Service',
     'Zero Config',
-    'TEE Privacy',
+    'Secure AI',
   ],
   authors: [{ name: 'Clawdi' }],
   creator: 'Clawdi',

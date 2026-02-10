@@ -31,7 +31,7 @@ const REVIEWS = [
   {
     name: 'DevOps Dan',
     username: '@devopsdan',
-    body: "The TEE privacy on @clawdi is real. My @OpenClaw runs in a secure enclave — they literally can't see my data. That matters.",
+    body: "The privacy setup on @clawdi is legit. My @OpenClaw runs in an isolated secure environment — they can't see my data even if they wanted to.",
     img: 'https://avatar.vercel.sh/devopsdan',
   },
   {

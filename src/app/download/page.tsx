@@ -33,7 +33,7 @@ export default function DownloadPage() {
 
         {/* CTA Buttons */}
         <div className="mt-10 flex w-full max-w-lg flex-col gap-4.5 sm:flex-row">
-          <Button className="flex-1 gap-2.5" asChild>
+          <Button variant="cta" className="flex-1 gap-2.5" asChild>
             <Link href="#">
               <Rocket className="size-5" />
               Get Started — $20/mo
@@ -49,7 +49,7 @@ export default function DownloadPage() {
 
         {/* Stats */}
         <div className="text-muted-foreground mt-4 text-center text-sm">
-          15-min setup · Zero config · AI models included · TEE privacy
+          15-min setup · Zero config · AI models included · Private by default
         </div>
 
         {/* What happens next */}

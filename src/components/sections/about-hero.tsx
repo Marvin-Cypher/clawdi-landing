@@ -24,7 +24,7 @@ export default function AboutHero() {
         <br />
         The problem? Setting it up takes hours of server configuration, OAuth flows,
         and API key management. Clawdi fixes that. We give you a fully managed OpenClaw
-        instance with frontier AI models included, TEE privacy via Phala, and a
+        instance with frontier AI models included, hardware-level privacy, and a
         15-minute white-glove setup call. All for $20/mo.
       </p>
 

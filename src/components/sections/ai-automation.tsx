@@ -11,16 +11,19 @@ import { cn } from '@/lib/utils';
 const stats = [
   {
     value: 180,
+    startValue: 120,
     suffix: 'K+',
     label: 'GitHub Stars',
   },
   {
     value: 150,
+    startValue: 80,
     suffix: '+',
     label: 'Contributors',
   },
   {
     value: 19,
+    startValue: 10,
     suffix: '+',
     label: 'Channels Supported',
   },
@@ -264,6 +267,7 @@ export default function AIAutomation() {
               <div className="text-2xl font-bold md:text-3xl">
                 <NumberTicker
                   value={stat.value}
+                  startValue={stat.startValue}
                   decimalPlaces={stat.value % 1 !== 0 ? 1 : 0}
                 />
                 {stat.suffix}

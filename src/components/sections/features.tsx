@@ -81,7 +81,7 @@ const ITEMS = [
       width: 186,
       height: 103,
     },
-    desc: 'Runs 24/7 in a secure enclave. Your data stays yours.',
+    desc: 'Runs 24/7 in a secure, isolated environment. Your data stays yours.',
   },
 ];
 

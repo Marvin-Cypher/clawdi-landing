@@ -33,7 +33,7 @@ interface Plan {
   subtitle: string;
   button: {
     text: string;
-    variant: 'default' | 'outline';
+    variant: 'default' | 'outline' | 'cta';
     href: string;
   };
   features: {
@@ -69,7 +69,7 @@ const PLANS: Plan[] = [
         { name: 'Server deployment', value: 'You manage' },
         { name: 'Setup time', value: '2-8 hours' },
         { name: 'Live setup support', value: false },
-        { name: 'TEE privacy (Phala)', value: false },
+        { name: 'Confidential compute', value: false },
         { name: 'Automatic updates', value: false },
       ],
       included: [
@@ -103,7 +103,7 @@ const PLANS: Plan[] = [
         { name: 'Server deployment', value: 'Fully managed' },
         { name: 'Setup time', value: '15 minutes' },
         { name: 'Live setup support', value: true },
-        { name: 'TEE privacy (Phala)', value: true },
+        { name: 'Confidential compute', value: true },
         { name: 'Automatic updates', value: true },
       ],
       included: [
@@ -221,8 +221,8 @@ const PricingCard = ({
         </div>
         <CardFooter>
           <Button
-            variant={isClawdi ? 'default' : 'secondary'}
-            className={cn('h-12 w-full', !isClawdi && 'border-input border')}
+            variant={isClawdi ? 'cta' : 'outline'}
+            className="h-12 w-full"
             asChild
           >
             <Link href={plan.button.href}>{plan.button.text}</Link>
