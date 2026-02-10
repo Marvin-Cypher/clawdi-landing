@@ -109,14 +109,14 @@ const Features = ({ className }: { className?: string }) => {
           {ITEMS.map((card, idx) => (
             <CarouselItem key={idx} className="min-w-70 basis-[16%] pl-6">
               <div className="flex h-full flex-col">
-                <Card className="dark:via-muted/20 dark:to-muted/50 to-background via-card from-card h-43 bg-gradient-to-br dark:from-transparent">
+                <Card className="to-background via-card from-card h-43 bg-gradient-to-br">
                   <CardContent className="flex h-full items-center justify-center">
                     <Image
                       src={card.image.src}
                       alt={card.title}
                       width={card.image.width}
                       height={card.image.height}
-                      className="object-contain invert dark:invert-0"
+                      className="object-contain invert"
                     />
                   </CardContent>
                 </Card>
@@ -131,8 +131,8 @@ const Features = ({ className }: { className?: string }) => {
           ))}
         </CarouselContent>
         <div className="container mt-10 flex justify-center gap-3 md:hidden">
-          <CarouselPrevious className="dark:via-muted/20 border-border dark:to-muted/50 to-background via-card from-card relative top-0 left-0 translate-y-0 rounded-md bg-gradient-to-br dark:from-transparent" />
-          <CarouselNext className="dark:via-muted/20 border-border dark:to-muted/50 to-background via-card from-card relative top-0 left-0 translate-y-0 rounded-md bg-gradient-to-br dark:from-transparent" />
+          <CarouselPrevious className="border-border to-background via-card from-card relative top-0 left-0 translate-y-0 rounded-md bg-gradient-to-br" />
+          <CarouselNext className="border-border to-background via-card from-card relative top-0 left-0 translate-y-0 rounded-md bg-gradient-to-br" />
         </div>
       </Carousel>
     </section>

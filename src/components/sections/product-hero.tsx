@@ -165,7 +165,7 @@ export default function ProductHero() {
       {/* CTA Buttons */}
       <div className="mx-auto mt-10 max-w-md space-y-3 md:mt-20">
         <div className="flex gap-4.5">
-          <Button variant="cta" className="flex-1 md:min-w-45">Get Started — $20/mo</Button>
+          <Button variant="cta" className="flex-1 md:min-w-45">Human Setup Service (Free)</Button>
           <Button className="flex-1 md:min-w-45" variant="outline">
             Book Setup Call
           </Button>

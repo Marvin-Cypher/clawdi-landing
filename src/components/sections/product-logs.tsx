@@ -101,14 +101,14 @@ function TerminalWithHeader() {
               <TabsList className="bg-input/20 h-7 rounded-md">
                 <TabsTrigger
                   value="logs"
-                  className="dark:data-[state=active]:bg-accent cursor-pointer rounded-sm border-none text-[0.625rem]"
+                  className="cursor-pointer rounded-sm border-none text-[0.625rem]"
                 >
                   Logs
                 </TabsTrigger>
                 <TabsTrigger
                   value="errors"
                   disabled
-                  className="dark:data-[state=active]:bg-accent cursor-pointer rounded-sm border-none text-[0.625rem]"
+                  className="cursor-pointer rounded-sm border-none text-[0.625rem]"
                 >
                   Errors
                 </TabsTrigger>
@@ -119,7 +119,7 @@ function TerminalWithHeader() {
                 <TabsTrigger
                   value="payloads"
                   disabled
-                  className="dark:data-[state=active]:bg-accent cursor-pointer rounded-sm border-none text-[0.625rem]"
+                  className="cursor-pointer rounded-sm border-none text-[0.625rem]"
                 >
                   Payloads
                 </TabsTrigger>

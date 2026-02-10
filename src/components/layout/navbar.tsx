@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 
 import Logo from '@/components/layout/logo';
-import { ThemeToggle } from '@/components/theme-toggle';
 import {
   Accordion,
   AccordionContent,
@@ -44,8 +43,7 @@ export const NAV_LINKS = [
     ],
   },
   { label: 'Pricing', href: '/pricing' },
-  { label: 'About', href: '/about' },
-  { label: 'Get Started', href: '/download' },
+  { label: 'Human Setup Service (Free)', href: '/download' },
   { label: 'Docs', href: '/docs' },
 ];
 
@@ -139,7 +137,6 @@ const Navbar = () => {
         </NavigationMenu>
 
         <div className="hidden w-47 items-center justify-end gap-4 lg:flex">
-          <ThemeToggle />
           {ACTION_BUTTONS.map((button) => (
             <Button
               key={button.label}
@@ -152,7 +149,6 @@ const Navbar = () => {
           ))}
         </div>
         <div className="flex items-center gap-2 lg:hidden lg:gap-4">
-          <ThemeToggle />
           <button
             className="text-muted-foreground relative flex size-8 rounded-sm border lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}

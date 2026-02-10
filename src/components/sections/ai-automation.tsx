@@ -31,37 +31,36 @@ const stats = [
 
 const cards = [
   {
-    id: 'signup',
-    title: 'Sign Up & Choose Apps',
-    subtitle: 'Select Gmail, Slack, Notion, Calendar...',
-    icon: Users,
-    iconColor: 'text-purple-500',
+    id: 'cloud',
+    title: 'Secure Cloud Deploy',
+    subtitle: 'Your own instance, running in seconds',
+    icon: Building2,
+    iconColor: 'text-blue-500',
     position: 'absolute top-0 left-0',
     isGenerating: false,
   },
   {
-    id: 'setup',
-    title: 'Book 15-Min Setup Call',
-    subtitle: 'We walk you through one-click authorizations',
-    icon: Building2,
-    iconColor: 'text-blue-500',
+    id: 'apps',
+    title: 'Auto-Connect Daily Apps',
+    subtitle: 'Gmail, Calendar, Notion, Slack — 1-click OAuth',
+    icon: Users,
+    iconColor: 'text-purple-500',
     position: 'absolute top-32 left-0',
     isGenerating: false,
   },
   {
     id: 'connecting',
-    title: 'Connecting your apps...',
+    title: 'Setting up your AI...',
     subtitle: '',
     icon: null,
     iconColor: '',
     position: 'absolute top-18 right-0',
     isGenerating: true,
   },
-
   {
-    id: 'delegate',
-    title: 'Start Delegating Tasks',
-    subtitle: 'Chat on WhatsApp, Telegram, or Slack',
+    id: 'messaging',
+    title: 'Auto-Connect Messaging',
+    subtitle: 'WhatsApp, Telegram, Slack — all connected',
     icon: Folder,
     iconColor: 'fill-destructive text-destructive',
     position: 'absolute right-0 bottom-0',
@@ -122,21 +121,22 @@ export default function AIAutomation() {
             <div className="relative z-10 flex items-center gap-2 px-5 py-4 text-xs lg:text-sm">
               <Sparkles className="fill-foreground size-3.5 shrink-0" />
               <div>
-                <span className="text-muted-foreground">3 steps:</span>{' '}
+                <span className="text-muted-foreground">Not for nerds.</span>{' '}
                 <span className="text-accent-foreground">
-                  From zero to AI assistant in 15 minutes
+                  For everyone.
                 </span>
               </div>
             </div>
           </motion.div>
           <h2 className="text-4xxl leading-tight tracking-normal md:text-5xl">
-            How it works: <br className="hidden md:block" />
-            <span className="text-gradient">3 steps, 15 minutes</span>
+            Why Clawdi? <br className="hidden md:block" />
+            <span className="text-gradient">We save you hours.</span>
           </h2>
           <p className="text-muted-foreground mt-2 max-w-xl text-lg leading-snug">
-            Sign up and choose your apps. Book a 15-minute setup call.
-            Start delegating tasks to your personal OpenClaw assistant.
-            We handle everything else.
+            OpenClaw is powerful but complex to set up. Clawdi does
+            everything for you — cloud deploy, app connections, messaging
+            channels, and AI models — so you can start using it, not
+            configuring it.
           </p>
         </div>
 

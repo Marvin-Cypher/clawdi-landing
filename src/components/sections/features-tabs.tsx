@@ -10,14 +10,14 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { cn } from '@/lib/utils';
 
 const FeaturesTabsSection = () => {
-  const [activeTab, setActiveTab] = useState('zeroconfig');
+  const [activeTab, setActiveTab] = useState('easyuse');
 
   const TABS_DATA = [
     {
-      id: 'zeroconfig',
-      title: 'Zero-Config App Integration',
+      id: 'easyuse',
+      title: 'Easy to Use — For Everyone',
       description:
-        'Tell us which apps you need. We prepare OAuth connections. You authorize with one click during your setup call. Done.',
+        'No terminal. No Docker. No YAML files. Just sign up, pick your apps, and start chatting with your AI assistant on WhatsApp or Telegram. Clawdi is built for normal people, not just developers.',
       image: {
         src: '/images/home/features-tabs/1.webp',
         width: 550,
@@ -27,22 +27,10 @@ const FeaturesTabsSection = () => {
         'self-end justify-self-end justify-end items-end flex md:mt-16 md:ps-16 mt-10 ps-10 w-full',
     },
     {
-      id: 'aimodels',
-      title: 'Frontier AI Models Included',
+      id: 'nomacmini',
+      title: 'No $500 Mac Mini Needed',
       description:
-        'No separate Claude or OpenAI subscription needed. Frontier models are included in your Clawdi plan. One bill, no surprises.',
-      image: {
-        src: '/images/home/features-tabs/2.webp',
-        width: 380,
-        height: 525,
-      },
-      className: 'w-full h-full flex justify-center items-center p-14 lg:p-0',
-    },
-    {
-      id: 'privacy',
-      title: 'Cloud Convenience, Local Privacy',
-      description:
-        'Your OpenClaw runs in a secure, isolated environment with confidential compute. We can\'t see your data, even if we wanted to.',
+        'The most popular way to run OpenClaw privately is buying a second computer — a $500 Mac Mini running 24/7. With Clawdi, we host it for you in a secure cloud environment at a fraction of the cost. Same privacy, no hardware.',
       image: {
         src: '/images/home/features-tabs/3.webp',
         width: 550,
@@ -59,18 +47,16 @@ const FeaturesTabsSection = () => {
       <div className="flex flex-col justify-between gap-3">
         <div className="space-y-6 text-balance lg:max-w-lg">
           <h2 className="text-4xxl leading-tight tracking-tight md:text-5xl">
-            Three pillars of{' '}
+            1-click register,{' '}
             <br className="hidden lg:block" />
-            effortless{' '}
-            <br className="hidden lg:block" />
-            power
+            <span className="text-gradient">then it&apos;s yours</span>
           </h2>
           <span className="text-xl leading-7 font-bold">
-            Everything Handled For You
+            No Setup Headaches
           </span>
           <p className="text-muted-foreground mt-3 text-lg leading-snug">
-            Other services give you a server and wish you luck. Clawdi
-            does the work for you — from app connections to AI models to privacy.
+            Most people give up on OpenClaw because of the setup. Clawdi
+            removes that barrier entirely — just register and go.
           </p>
         </div>
         {/* Tabs Section */}
@@ -160,7 +146,7 @@ const FeaturesTabsSection = () => {
                               alt={tab.title}
                               width={tab.image.width}
                               height={tab.image.height}
-                              className="object-contain invert dark:invert-0"
+                              className="object-contain invert"
                               priority
                             />
                           </motion.div>
@@ -198,7 +184,7 @@ const FeaturesTabsSection = () => {
                   alt={tab.title}
                   width={tab.image.width}
                   height={tab.image.height}
-                  className="object-contain invert dark:invert-0"
+                  className="object-contain invert"
                   priority
                 />
               </motion.div>

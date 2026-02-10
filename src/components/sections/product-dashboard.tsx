@@ -64,7 +64,7 @@ export default function ProductDashboard() {
         alt="Clawdi Dashboard"
         width={1440}
         height={905}
-        className="mx-auto mt-10 mask-b-from-50% mask-b-to-95% invert md:mt-16 dark:invert-0"
+        className="mx-auto mt-10 mask-b-from-50% mask-b-to-95% invert md:mt-16"
       />
 
       {/* Tagline */}

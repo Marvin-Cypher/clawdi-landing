@@ -96,7 +96,8 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
+          forcedTheme="light"
           disableTransitionOnChange
         >
           <RootProvider
@@ -110,7 +111,7 @@ export default function RootLayout({
             <div className="bg-background/10 absolute inset-0 z-[-2] backdrop-blur-[85px] will-change-transform md:backdrop-blur-[170px]" />
             {/* Noise Background */}
             <div
-              className="absolute inset-0 z-[-1] size-full opacity-70 mix-blend-overlay dark:md:opacity-100"
+              className="absolute inset-0 z-[-1] size-full opacity-70 mix-blend-overlay"
               style={{
                 background: `url(/images/noise.webp) lightgray 0% 0% / 83.69069695472717px 83.69069695472717px repeat`,
               }}

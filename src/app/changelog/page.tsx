@@ -29,7 +29,7 @@ const components = {
   ),
   img: ({ src, alt }: { src: string; alt: string }) => (
     // eslint-disable-next-line @next/next/no-img-element
-    <img src={src} alt={alt} className="my-4 invert dark:invert-0" />
+    <img src={src} alt={alt} className="my-4 invert" />
   ),
 };
 

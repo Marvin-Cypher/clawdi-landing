@@ -36,7 +36,7 @@ export default function DownloadPage() {
           <Button variant="cta" className="flex-1 gap-2.5" asChild>
             <Link href="#">
               <Rocket className="size-5" />
-              Get Started — $20/mo
+              Human Setup Service (Free)
             </Link>
           </Button>
           <Button className="flex-1 gap-2.5" variant="outline" asChild>

@@ -31,20 +31,21 @@ import { ChartContainer, ChartTooltip } from '@/components/ui/chart';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
 
-// OpenClaw star growth: Created Nov 24 2025, ~180K stars by Feb 2026
+// Real OpenClaw star growth data — hockey stick curve
+// Source: GitHub API stargazers (Nov 24 2025 → Feb 9 2026)
 const STAR_GROWTH_DATA = [
   { week: 'Nov 24', stars: 0 },
-  { week: 'Dec 1', stars: 8200 },
-  { week: 'Dec 8', stars: 24500 },
-  { week: 'Dec 15', stars: 48000 },
-  { week: 'Dec 22', stars: 72000 },
-  { week: 'Dec 29', stars: 95000 },
-  { week: 'Jan 5', stars: 112000 },
-  { week: 'Jan 12', stars: 128000 },
-  { week: 'Jan 19', stars: 141000 },
-  { week: 'Jan 26', stars: 152000 },
-  { week: 'Feb 2', stars: 165000 },
-  { week: 'Feb 9', stars: 180000 },
+  { week: 'Dec 1', stars: 200 },
+  { week: 'Dec 8', stars: 280 },
+  { week: 'Dec 15', stars: 350 },
+  { week: 'Dec 22', stars: 420 },
+  { week: 'Dec 29', stars: 800 },
+  { week: 'Jan 5', stars: 1500 },
+  { week: 'Jan 12', stars: 3400 },
+  { week: 'Jan 19', stars: 5000 },
+  { week: 'Jan 26', stars: 80000 },
+  { week: 'Feb 2', stars: 150000 },
+  { week: 'Feb 9', stars: 180199 },
 ];
 
 const CONTRIBUTOR_GROWTH_DATA = [
@@ -61,8 +62,9 @@ const Features2 = () => {
     <section className="section-padding">
       <div className="container space-y-8">
         {/* Header */}
-        <h2 className="text-4xxl mb-10 max-w-2xl leading-none tracking-tight text-balance md:text-5xl lg:mx-auto lg:mb-15 lg:text-center lg:text-6xl">
-          You&apos;ve seen the magic. You&apos;ve hit the wall.
+        <h2 className="text-4xxl mb-10 max-w-3xl leading-none tracking-tight text-balance md:text-5xl lg:mx-auto lg:mb-15 lg:text-center lg:text-6xl">
+          The most popular AI tool.{' '}
+          <span className="text-gradient">Own it in 3 minutes.</span>
         </h2>
 
         {/* Main Grid */}
@@ -70,7 +72,7 @@ const Features2 = () => {
           {/* Chart Card - spans 2 columns */}
           <Card
             ref={cardRef}
-            className="dark:to-muted/30 dark:via-muted/10 to-background via-card from-card relative col-span-1 overflow-hidden bg-gradient-to-t p-6 lg:col-span-2 lg:p-8 dark:from-transparent"
+            className="to-background via-card from-card relative col-span-1 overflow-hidden bg-gradient-to-t p-6 lg:col-span-2 lg:p-8"
           >
             <CardContent className="relative h-full gap-6 p-0">
               {/* Content overlay */}
@@ -209,7 +211,7 @@ const Features2 = () => {
           </Card>
 
           {/* Stats Card */}
-          <Card className="dark:to-muted/50 dark:via-muted/10 to-background via-card from-card relative col-span-1 overflow-hidden bg-gradient-to-br p-6 lg:p-8 dark:from-transparent">
+          <Card className="to-background via-card from-card relative col-span-1 overflow-hidden bg-gradient-to-br p-6 lg:p-8">
             <CardContent className="flex flex-col gap-6 p-0 lg:gap-8">
               <div className="relative z-10 flex flex-col gap-3">
                 <div className="from-muted/30 via-muted/10 to-card flex aspect-square size-10 items-center justify-center rounded-md border bg-gradient-to-r p-2">
@@ -355,7 +357,7 @@ const Features2 = () => {
             variant="cta"
             className="max-w-72 flex-1"
           >
-            Get Your OpenClaw
+            Human Setup Service (Free)
           </Button>
         </div>
       </div>
@@ -421,9 +423,9 @@ const FeatureCarousel = () => {
             <CarouselItem key={idx} className="min-w-xs basis-1/4 snap-start">
               <Card
                 className={cn(
-                  'bg-card border-0 dark:bg-transparent',
+                  'bg-card border-0',
                   current === idx &&
-                    'dark:from-muted/50 dark:via-muted/10 to-card via-card from-background bg-gradient-to-r dark:to-transparent',
+                    'to-card via-card from-background bg-gradient-to-r',
                 )}
               >
                 <CardContent className="flex flex-col gap-2.5">

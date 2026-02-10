@@ -48,7 +48,7 @@ export default function AboutLogos() {
             alt={logo.name}
             width={logo.width}
             height={logo.height}
-            className="opacity-70 invert dark:invert-0"
+            className="opacity-70 invert"
           />
         ))}
       </div>

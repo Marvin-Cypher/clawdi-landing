@@ -7,8 +7,6 @@
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
 
-@variant dark (&:is(.dark *));
-
 :root {
   --background: oklch(0.97 0.005 240);
   --foreground: oklch(0.15 0.01 240);
@@ -70,56 +68,6 @@
   --text-family: var(--font-inter);
   --display-weight: 400;
   --text-weight: 400;
-}
-
-.dark {
-  --background: oklch(0.13 0.01 240);
-  --foreground: oklch(0.97 0 0);
-  --card: oklch(0.16 0.01 240);
-  --card-foreground: oklch(0.97 0 0);
-  --popover: oklch(0.16 0.01 240);
-  --popover-foreground: oklch(0.97 0 0);
-  --primary: oklch(0.97 0 0);
-  --primary-foreground: oklch(0.13 0.01 240);
-  --secondary: oklch(0.63 0.19 260);
-  --secondary-foreground: oklch(0.97 0 0);
-  --muted: oklch(0.93 0.01 240 / 0.08);
-  --muted-foreground: oklch(0.7 0.01 240);
-  --accent: oklch(0.18 0.01 240);
-  --accent-foreground: oklch(0.93 0.005 240);
-  --destructive: oklch(0.55 0.23 25);
-  --border: oklch(0.22 0.01 240);
-  --input: oklch(0.28 0.01 240);
-  --ring: oklch(0.63 0.19 260);
-
-  --chart-1: oklch(0.63 0.19 260);
-  --chart-2: oklch(0.72 0.19 45);
-  --chart-3: oklch(0.66 0.2 20);
-  --chart-4: oklch(0.55 0.15 260);
-  --chart-5: oklch(0.6 0.15 45);
-
-  /* CTA tokens (same in dark, higher contrast) */
-  --cta: oklch(0.62 0.22 25);
-  --cta-foreground: oklch(1 0 0);
-  --cta-hover: oklch(0.56 0.22 25);
-  --accent-coral: oklch(0.66 0.2 20);
-
-  /* Shadow scale (dark mode — slightly stronger for visibility) */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.15);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.2);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.25);
-  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.3);
-  --shadow-cta: 0 4px 14px oklch(0.62 0.22 25 / 0.3);
-  --shadow-cta-hover: 0 8px 20px oklch(0.62 0.22 25 / 0.4);
-
-  --sidebar: oklch(0.15 0.01 240);
-  --sidebar-foreground: oklch(0.97 0 0);
-  --sidebar-primary: oklch(0.63 0.19 260);
-  --sidebar-primary-foreground: oklch(0.97 0 0);
-  --sidebar-accent: oklch(0.2 0.01 240);
-  --sidebar-accent-foreground: oklch(0.97 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.63 0.19 260);
 }
 
 @theme inline {
@@ -256,32 +204,6 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-/* Toggle Theme View Transitions */
-@keyframes theme-mask {
-  0% {
-    clip-path: circle(0% at var(--x, 50%) var(--y, 50%));
-  }
-
-  100% {
-    clip-path: circle(150% at var(--x, 50%) var(--y, 50%));
-  }
-}
-
-html.theme-transition::view-transition-old(root),
-html.theme-transition::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
-}
-
-html.theme-transition::view-transition-old(root) {
-  z-index: 1;
-}
-
-html.theme-transition::view-transition-new(root) {
-  z-index: 2;
-  animation: theme-mask 0.5s ease-in forwards;
 }
 
 /* Handle reduced motion preference globally */

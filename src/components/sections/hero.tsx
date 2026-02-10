@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -34,7 +33,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="space-y-4">
             <div className="flex gap-4.5">
-              <Button variant="cta" className="flex-1 md:min-w-45">Get Started — $20/mo</Button>
+              <Button variant="cta" className="flex-1 md:min-w-45">Human Setup Service (Free)</Button>
               <Button variant="outline" className="flex-1 md:min-w-45">
                 See How It Works
               </Button>
@@ -45,14 +44,14 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Hero Image */}
-        <Image
-          src="/images/home/hero.webp"
-          alt="Clawdi Dashboard"
-          className="ring-foreground/5 mt-10 w-full rounded-xs shadow-2xl ring-6 invert md:mt-20 md:rounded-sm md:px-[1px] md:ring-16 lg:mt-30 dark:invert-0"
-          width={1440}
-          height={905}
-          priority
+        {/* Hero Video */}
+        <video
+          src="/images/home/hero-demo.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="ring-foreground/5 mt-10 w-full rounded-xs shadow-2xl ring-6 md:mt-20 md:rounded-sm md:px-[1px] md:ring-16 lg:mt-30"
         />
         <GradientSVG className="absolute top-0 right-0 -z-10 origin-right scale-30 md:scale-50 lg:scale-100" />
       </div>

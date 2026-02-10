@@ -107,11 +107,11 @@ const Footer = () => {
             className="border-input bg-accent flex-1 border"
             asChild
           >
-            <Link href="/signup">Get Started</Link>
+            <Link href="/signup">Human Setup Service</Link>
           </Button>
         </div>
 
-        <p className="mt-3 text-sm">$20/month · Everything included</p>
+        <p className="mt-3 text-sm">Free human setup · $20/month after</p>
       </div>
 
       <div className="container mt-20 flex flex-col-reverse justify-between gap-8 text-xs lg:mt-30 lg:flex-row">

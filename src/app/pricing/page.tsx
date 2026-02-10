@@ -92,7 +92,7 @@ const PLANS: Plan[] = [
     },
     subtitle: 'Everything managed. Just use your AI assistant.',
     button: {
-      text: 'Get Started',
+      text: 'Human Setup Service',
       variant: 'default',
       href: '/download',
     },
@@ -183,11 +183,11 @@ const PricingCard = ({
   return (
     <Card
       className={cn(
-        'relative overflow-hidden shadow-none dark:bg-[#07070e]',
+        'relative overflow-hidden shadow-none',
         isClawdi &&
           'before:absolute before:inset-0 before:rounded-md before:bg-gradient-to-tr before:from-[var(--chart-1)]/10 before:via-[var(--chart-2)] before:to-[var(--chart-3)] before:mask-b-from-40% before:mask-b-to-80%',
         isClawdi &&
-          'after:bg-card after:absolute after:inset-[1px] after:rounded-[calc(var(--radius)-1px)] dark:after:bg-[#07070e]',
+          'after:bg-card after:absolute after:inset-[1px] after:rounded-[calc(var(--radius)-1px)]',
         className,
       )}
     >
