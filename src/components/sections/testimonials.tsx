@@ -13,6 +13,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { ClawDecor } from '@/components/ui/claw-decor';
 import { cn } from '@/lib/utils';
 
 const REVIEWS = [
@@ -58,7 +59,8 @@ const firstRow = REVIEWS.slice(0, REVIEWS.length / 2);
 const secondRow = REVIEWS.slice(REVIEWS.length / 2);
 const Testimonials = () => {
   return (
-    <section className="container flex flex-col gap-y-10 overflow-x-hidden py-10 md:py-15 lg:flex-row">
+    <section className="container relative flex flex-col gap-y-10 overflow-x-hidden py-10 md:py-15 lg:flex-row">
+      <ClawDecor className="-left-10 bottom-0" size={150} rotate={70} opacity={0.03} />
       <div className="flex max-w-lg flex-col gap-15 text-balance">
         <h2 className="text-4xxl leading-tight tracking-tight md:text-5xl">
           People love their OpenClaw

@@ -28,6 +28,7 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel';
 import { ChartContainer, ChartTooltip } from '@/components/ui/chart';
+import { ClawDecor } from '@/components/ui/claw-decor';
 import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
 
@@ -59,7 +60,8 @@ const Features2 = () => {
   const cardRef = useRef<HTMLDivElement>(null);
   const isChartInView = useInView(cardRef, { once: true, amount: 0.5 });
   return (
-    <section className="section-padding">
+    <section className="section-padding relative">
+      <ClawDecor className="-right-16 top-20" size={220} rotate={40} opacity={0.03} />
       <div className="container space-y-8">
         {/* Header */}
         <h2 className="text-4xxl mb-10 max-w-3xl leading-none tracking-tight text-balance md:text-5xl lg:mx-auto lg:mb-15 lg:text-center lg:text-6xl">
@@ -357,7 +359,7 @@ const Features2 = () => {
             variant="cta"
             className="max-w-72 flex-1"
           >
-            Human Setup Service (Free)
+            Own Your Claw AI
           </Button>
         </div>
       </div>

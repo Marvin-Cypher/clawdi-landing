@@ -2,6 +2,7 @@
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { ClawDecor } from '@/components/ui/claw-decor';
 
 interface SVGProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
@@ -33,7 +34,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="space-y-4">
             <div className="flex gap-4.5">
-              <Button variant="cta" className="flex-1 md:min-w-45">Human Setup Service (Free)</Button>
+              <Button variant="cta" className="flex-1 md:min-w-45">Own Your Claw AI</Button>
               <Button variant="outline" className="flex-1 md:min-w-45">
                 See How It Works
               </Button>
@@ -53,6 +54,8 @@ export default function Hero() {
           playsInline
           className="ring-foreground/5 mt-10 w-full rounded-xs shadow-2xl ring-6 md:mt-20 md:rounded-sm md:px-[1px] md:ring-16 lg:mt-30"
         />
+        <ClawDecor className="top-10 -left-20 hidden lg:block" size={280} rotate={-15} opacity={0.035} />
+        <ClawDecor className="-right-10 bottom-30" size={160} rotate={25} opacity={0.03} />
         <GradientSVG className="absolute top-0 right-0 -z-10 origin-right scale-30 md:scale-50 lg:scale-100" />
       </div>
     </section>

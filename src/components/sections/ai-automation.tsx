@@ -6,6 +6,7 @@ import { useRef } from 'react';
 
 import { AnimatedBeam } from '@/components/magicui/animated-beam';
 import { NumberTicker } from '@/components/magicui/number-ticker';
+import { ClawDecor } from '@/components/ui/claw-decor';
 import { cn } from '@/lib/utils';
 
 const stats = [
@@ -81,7 +82,8 @@ export default function AIAutomation() {
   const cardRefs = [rightCard1Ref, rightCard2Ref, rightCard3Ref, rightCard4Ref];
 
   return (
-    <section className="section-padding container">
+    <section className="section-padding container relative">
+      <ClawDecor className="-left-24 bottom-10 hidden lg:block" size={240} rotate={-30} opacity={0.03} />
       <div
         ref={containerRef}
         className="relative grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0"

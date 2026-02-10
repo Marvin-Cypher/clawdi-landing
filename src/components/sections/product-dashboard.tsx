@@ -15,33 +15,33 @@ import {
 
 const FEATURE_CARDS = [
   {
-    title: 'Multi-Channel Inbox',
+    title: '1-Click App Connections',
     description:
-      'WhatsApp, Telegram, Slack, Discord, Signal, iMessage — all routed through one gateway.',
+      'Connect Gmail, Slack, Notion, Calendar, and 20+ apps with OAuth — no API keys, no config files.',
     icon: Activity,
     cta: 'Learn more',
     href: '#',
   },
   {
-    title: 'Multi-Agent Routing',
+    title: 'Human Setup Call',
     description:
-      'Route different conversations to isolated agents, each with its own workspace and history.',
-    icon: Settings,
-    cta: 'Learn more',
-    href: '#',
-  },
-  {
-    title: 'Voice Wake + Talk',
-    description:
-      'Always-on voice mode for macOS, iOS, and Android. Talk to your assistant hands-free.',
+      'A real human walks you through setup in 15 minutes. If we can\'t get you running, you don\'t pay.',
     icon: Clock,
     cta: 'Learn more',
     href: '#',
   },
   {
-    title: 'Sandbox Mode',
+    title: 'Chat on Any Channel',
     description:
-      'Agent execution runs in per-session Docker containers for enhanced security and isolation.',
+      'Message your AI on WhatsApp, Telegram, Slack, Discord, or iMessage — whichever you already use.',
+    icon: Settings,
+    cta: 'Learn more',
+    href: '#',
+  },
+  {
+    title: 'AI Models Included',
+    description:
+      'GPT-5.3 and Claude Opus 4.6 are included. No separate API keys or subscriptions needed.',
     icon: Bug,
     cta: 'Learn more',
     href: '#',
@@ -54,7 +54,7 @@ export default function ProductDashboard() {
       {/* Header */}
       <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
         <h2 className="text-4xl leading-none tracking-tight text-balance md:text-5xl lg:text-6xl">
-          One gateway, every conversation channel
+          Sign up, connect apps, start chatting
         </h2>
       </div>
 

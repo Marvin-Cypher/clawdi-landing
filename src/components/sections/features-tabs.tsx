@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import { Card, CardContent } from '@/components/ui/card';
+import { ClawDecor } from '@/components/ui/claw-decor';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { cn } from '@/lib/utils';
 
@@ -42,7 +43,8 @@ const FeaturesTabsSection = () => {
   ];
 
   return (
-    <section className="section-padding container grid max-w-screen-xl lg:grid-cols-2 lg:gap-18">
+    <section className="section-padding container relative grid max-w-screen-xl lg:grid-cols-2 lg:gap-18">
+      <ClawDecor className="right-10 -top-10 hidden lg:block" size={180} rotate={55} opacity={0.025} />
       {/* Left: Text & Tabs */}
       <div className="flex flex-col justify-between gap-3">
         <div className="space-y-6 text-balance lg:max-w-lg">

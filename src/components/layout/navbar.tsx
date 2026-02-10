@@ -1,5 +1,5 @@
 'use client';
-import { Clock, Cpu } from 'lucide-react';
+import { Clock, Shield } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
@@ -29,16 +29,16 @@ export const NAV_LINKS = [
     href: '/product',
     subitems: [
       {
-        label: 'Zero-Config Setup',
+        label: 'Easy to Use',
         href: '/product',
-        description: 'We handle OAuth and API keys so you don\'t have to',
+        description: 'Zero-config setup, 1-click OAuth, AI models included',
         icon: Clock,
       },
       {
-        label: 'AI Models Included',
-        href: '/product',
-        description: 'Frontier models included in your plan. One bill.',
-        icon: Cpu,
+        label: 'Privacy & Security',
+        href: '/product/privacy',
+        description: 'TEE confidential compute — no $500 Mac Mini needed',
+        icon: Shield,
       },
     ],
   },

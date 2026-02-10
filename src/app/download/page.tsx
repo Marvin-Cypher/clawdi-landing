@@ -4,6 +4,7 @@ import { Calendar, Rocket } from 'lucide-react';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
+import { ClawDecor } from '@/components/ui/claw-decor';
 
 interface SVGProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
@@ -12,6 +13,8 @@ interface SVGProps extends React.SVGProps<SVGSVGElement> {
 export default function DownloadPage() {
   return (
     <section className="section-padding relative flex min-h-[calc(100vh-var(--header-height)-1px)] items-center justify-center">
+      <ClawDecor className="-left-10 top-40 hidden md:block" size={200} rotate={-20} opacity={0.03} />
+      <ClawDecor className="-right-16 bottom-60" size={160} rotate={45} opacity={0.025} />
       <div className="relative container flex max-w-4xl flex-col items-center text-center">
         {/* Icon */}
         <div className="relative flex size-24 items-center justify-center rounded-2xl border bg-gradient-to-br from-[var(--chart-1)]/10 via-transparent to-[var(--chart-2)]/10 md:size-32">

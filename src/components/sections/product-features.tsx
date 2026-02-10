@@ -51,29 +51,29 @@ import { cn } from '@/lib/utils';
 // Feature card data
 const FEATURE_CARDS = [
   {
-    title: 'Session Management',
-    description: 'Persistent sessions across channels with full conversation history',
+    title: 'Zero-Config Setup',
+    description: 'No YAML, no Docker, no terminal commands. Just sign up and start using your AI.',
     image: '/images/product/debugging.png',
   },
   {
-    title: 'Skills Platform',
-    description: 'Bundled, managed, and custom skills for any automation',
+    title: 'Automatic Updates',
+    description: 'We handle all OpenClaw upgrades, security patches, and model updates for you.',
     image: '/images/product/export.png',
   },
   {
-    title: 'Model-Agnostic AI',
+    title: 'Frontier AI Included',
     description:
-      'Anthropic, OpenAI, MiniMax, OpenRouter — per-agent routing with failover',
+      'GPT-5.3, Claude Opus 4.6, and more — all included, no separate API keys required.',
     image: '/images/product/performance.png',
   },
   {
-    title: 'App Integrations',
-    description: 'Gmail, Calendar, Notion, Slack, and 20+ more apps connected',
+    title: '1-Click App Connections',
+    description: 'Gmail, Calendar, Notion, Slack, and 20+ apps connected via simple OAuth.',
     image: '/images/product/integrate.png',
   },
   {
     title: 'Companion Apps',
-    description: 'Native macOS, iOS, and Android apps with camera, screen capture, and notifications',
+    description: 'Native macOS, iOS, and Android apps. Talk to your AI anywhere you go.',
     image: '/images/product/ai-usage.png',
   },
 ];
@@ -84,11 +84,11 @@ export default function ProductFeatures() {
       {/* Header */}
       <div className="mx-auto max-w-4xl">
         <h2 className="text-4xxl leading-tight tracking-tight md:text-5xl">
-          Everything OpenClaw offers, fully managed
+          Built for normal people, not just developers
         </h2>
         <p className="text-muted-foreground mt-3 text-lg leading-snug">
-          OpenClaw is a powerhouse. Clawdi removes the setup complexity so you
-          can focus on what your AI assistant can do for you.
+          OpenClaw is the world&apos;s most powerful AI assistant. Clawdi makes
+          it accessible to everyone — no technical skills required.
         </p>
       </div>
 

@@ -29,19 +29,21 @@ export default function ProductHero() {
       <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-5 text-center">
         <div className="flex items-center rounded-full border p-1 text-xs">
           <span className="bg-muted rounded-full px-3 py-1">
-            Features
+            Easy to Use
           </span>
-          <span className="px-3">Powered by OpenClaw</span>
+          <span className="px-3">No technical skills needed</span>
         </div>
 
         <h1 className="text-foreground text-5xl leading-none tracking-tight text-balance md:text-6xl lg:text-7xl">
-          Your AI assistant, <br className="hidden sm:block" />
-          <span className="text-gradient">across every channel</span>
+          The easiest way to{' '}
+          <br className="hidden sm:block" />
+          <span className="text-gradient">run OpenClaw</span>
         </h1>
 
         <p className="text-muted-foreground max-w-2xl leading-snug md:text-lg lg:text-xl">
-          Clawdi gives you a fully managed OpenClaw instance — connected to
-          22+ messaging channels, frontier AI models, and your favorite apps.
+          No terminal. No Docker. No YAML. Clawdi sets up your fully managed
+          OpenClaw instance in 15 minutes — with a real human walking you through
+          every step.
         </p>
       </div>
 
@@ -165,13 +167,13 @@ export default function ProductHero() {
       {/* CTA Buttons */}
       <div className="mx-auto mt-10 max-w-md space-y-3 md:mt-20">
         <div className="flex gap-4.5">
-          <Button variant="cta" className="flex-1 md:min-w-45">Human Setup Service (Free)</Button>
+          <Button variant="cta" className="flex-1 md:min-w-45">Own Your Claw AI</Button>
           <Button className="flex-1 md:min-w-45" variant="outline">
             Book Setup Call
           </Button>
         </div>
         <div className="text-muted-foreground text-center text-sm tracking-wide">
-          22+ channels · AI included · Secure by default
+          15-min setup · 1-click OAuth · AI models included
         </div>
       </div>
     </section>
