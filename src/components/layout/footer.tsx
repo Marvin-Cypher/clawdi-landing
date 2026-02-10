@@ -1,20 +1,20 @@
 'use client';
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import {
-  FaGithub,
-  FaDiscord,
-  FaXTwitter,
-} from 'react-icons/fa6';
-import {
-  Mail,
   Calendar,
-  MessageSquare,
   FileText,
+  Mail,
+  MessageSquare,
   Shield,
   Sparkles,
 } from 'lucide-react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import {
+  FaDiscord,
+  FaGithub,
+  FaXTwitter,
+} from 'react-icons/fa6';
 
 import Logo from '@/components/layout/logo';
 import { NAV_LINKS } from '@/components/layout/navbar';
